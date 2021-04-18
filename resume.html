@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Resume of Ray Waldin</title>
+        <style>
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+            body {
+                font-family: helvetica, sans-serif;
+                line-height: 1.3rem;
+            }
+            body > header {
+                margin-block-end: 1rem;
+                font-size: 0.9rem;
+                text-align: center;
+            }
+            h1,
+            h2,
+            h3 {
+                margin: 0;
+                font-weight: 200;
+            }
+            h1 {
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+            h2 {
+                font-size: 1.05rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+            a {
+                color: black;
+                text-decoration: none;
+            }
+            p {
+                margin-block: 4px 1.2rem;
+                text-align: justify;
+                font-size: 1rem;
+            }
+            .employment section {
+                page-break-inside: avoid;
+            }
+            .employment section:last-of-type p {
+                margin-block-end: 0;
+            }
+            .employment header {
+                display: grid;
+                grid-template-areas: 'company position dates';
+                grid-template-columns: 1fr auto 1fr;
+                align-items: baseline;
+                padding-inline: 4px;
+                padding-block-start: 3px;
+                line-height: 1.2rem;
+                border-block-end: 2px solid #afafaf;
+                background-color: #efefef;
+            }
+            .employment .company {
+                grid-area: company;
+            }
+            .employment .dates {
+                grid-area: dates;
+                justify-self: flex-end;
+            }
+            .employment .position {
+                grid-area: position;
+                justify-self: center;
+                font-size: 1.1rem;
+                font-weight: 800;
+            }
+            @media screen {
+                :root {
+                    background-color: #efefef;
+                    -webkit-text-size-adjust: 100%;
+                }
+                body {
+                    margin: 1em auto;
+                    padding: 2rem;
+                    max-width: 720px;
+                    position: relative;
+                    background-color: #fff;
+                    box-shadow: 0 1px 4px #7f7f7f;
+                }
+                a {
+                    border-block-end: 1px solid #ccc;
+                }
+                a:hover {
+                    color: #00f;
+                    border-block-end: 1px solid #00f;
+                }
+            }
+            @media (max-width: 720px) {
+                body {
+                    margin: 0;
+                    padding: 1em;
+                }
+            }
+            @media (max-width: 520px) {
+                .employment header {
+                    grid-template-areas: 'position position' 'company dates';
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header itemscope="" itemtype="http://schema.org/Person">
+            <h1 itemprop="name">Ray Waldin</h1>
+            <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                <span itemprop="addressLocality">Torrance</span>, <span itemprop="addressRegion">CA</span>
+            </div>
+            <div itemprop="telephone">(415) 672-1316</div>
+            <a href="mailto:ray@waldin.net" itemprop="email">ray@waldin.net</a>
+        </header>
+        <main class="employment">
+            <section id="spacex">
+                <header>
+                    <h3 class="dates">2018-2020</h3>
+                    <h2 class="company">SpaceX</h2>
+                    <h3 class="position">Sr. Software Engineer</h3>
+                </header>
+                <p>
+                    SpaceX designs, builds, and launches rockets and satellites. My primary duty at SpaceX was the
+                    development of software for Crew Displays, the touchscreen consoles used by astronauts during crewed
+                    missions to the International Space Station. This software runs in Chromium on custom-built Linux
+                    touchscreens and was developed using Web Components, HTML, Javascript, and CSS, using middleware and
+                    testing tools written in C++ and Python.
+                </p>
+            </section>
+
+            <section id="wine">
+                <header>
+                    <h3 class="dates">2014-2017</h3>
+                    <h2 class="company">wine.com</h2>
+                    <h3 class="position">E-commerce Architect</h3>
+                </header>
+                <p>
+                    <a href="https://wine.com/">Wine.com</a> is an e-commerce website that sells wine and spirits to
+                    consumers nationwide. As E-commerce Architect I designed and developed the replacement for an aging
+                    monolithic ASP.NET website with a modern responsive single page app built with EpoxyJS, Backbone,
+                    and Express, that initially renders content on the server and then updates content on the client. I
+                    also designed and instituted a rolling deployment scheme to allow updates during business hours
+                    without bringing down the website, as well as full content management integration with Contentful.
+                </p>
+            </section>
+
+            <section id="wsi">
+                <header>
+                    <h3 class="dates">2010-2013</h3>
+                    <h2 class="company">Williams-Sonoma</h2>
+                    <h3 class="position">E-commerce Architect</h3>
+                </header>
+                <p>
+                    Williams-Sonoma operates high-traffic e-commerce websites for many renown brands including
+                    <a href="https://www.potterybarn.com/">PotteryBarn</a>,
+                    <a href="https://www.potterybarnkids.com/">PotteryBarnKids</a>,
+                    <a href="https://www.pbteen.com/">pbteen</a>, <a href="https://www.westelm.com/">west elm</a>, and
+                    the flagship <a href="https://www.williams-sonoma.com/">Williams-Sonoma</a>. My contributions to
+                    these websites included major redesigns of key functional areas including product pages and shopping
+                    pages, design and implementation of core UI widgets and Javascript infrastructure used throughout
+                    each website, and the design and implementation of a common code-sharing and build-system for use by
+                    each brand's front-end engineers. Technologies used include Java/SpringMVC, Akamai Edge Caching/ESI,
+                    Freemarker template engine, Dojo Javascript framework, SASS, and D3.js.
+                </p>
+            </section>
+
+            <section id="keas">
+                <header>
+                    <h3 class="dates">2009-2010</h3>
+                    <h2 class="company">Keas</h2>
+                    <h3 class="position">Sr. Software Engineer</h3>
+                </header>
+                <p>
+                    At Keas, my principal responsibilities were to lead a team of four front-end engineers in the
+                    development of a consumer facing web application, built with Java, JSP, and Javascript, using tools
+                    such as Spring MVC, JQuery, Maven, Hudson, Subversion, and Eclipse. Additionaly, I was responsible
+                    for the development of XSLT and Javascript technology used to implement Keas' content sharing
+                    relationship with Healthwise, transforming XML content and medical protocols into HTML pages for use
+                    of the web.
+                </p>
+            </section>
+
+            <section id="contracting">
+                <header>
+                    <h3 class="dates">2007-2009</h3>
+                    <h2 class="company">Contracting</h2>
+                    <h3 class="position">Web Developer</h3>
+                </header>
+                <p>
+                    On contract with Western Governors University, I developed a Groovy/Grails/jQuery application used
+                    internally for authoring of educational course curricula and subsequent alignment of these to
+                    various state, federal, and professional standards organizations.
+                </p>
+                <p>
+                    On contract with Oracle Corporation, I developed features for use in Oracle's Fusion Enterprise
+                    Application prototypes for the User Experience group, including tagging, contextual popup windows,
+                    and feed subscriptions.
+                </p>
+            </section>
+
+            <section id="palamida">
+                <header>
+                    <h3 class="dates">2003-2007</h3>
+                    <h2 class="company">Palamida</h2>
+                    <h3 class="position">Co-Founder</h3>
+                </header>
+                <p>
+                    Palamida's products and services enable customers to discover and manage the use of third-party
+                    code. As a co-founder, I was responsible for the inception, design, and implementation of the core
+                    technology used to detect and identify third-party components using exact and fuzzy matching of
+                    source code and binary data. Additionally, I was responsible for the design of the infrastructure
+                    necessary to collect and process massive amounts of component signature data. Palamida was acquired
+                    by Flexera Software in 2016.
+                </p>
+            </section>
+
+            <section id="cacheon">
+                <header>
+                    <h3 class="dates">2000-2003</h3>
+                    <h2 class="company">Cacheon</h2>
+                    <h3 class="position">Software Architect</h3>
+                </header>
+                <p>
+                    Cacheon specialized in application integration and migration software. While employed there as
+                    Software Architect, I was responsible for the design and development of the object model used to
+                    represent Java program logic, based upon the Java Language Specification, an ANTLR tree grammar for
+                    transforming source code parse trees into this model, an XPath implementation for use as a query
+                    engine with Cacheon Semantic Trees, and a declarative language for Cacheon's rule-based source code
+                    transformation engine
+                </p>
+            </section>
+
+            <section id="lexica">
+                <header>
+                    <h3 class="dates">1999-2000</h3>
+                    <h2 class="company">Lexica</h2>
+                    <h3 class="position">Technical Lead / Architect</h3>
+                </header>
+                <p>
+                    Lexica produced software for the insurance industry, specifically supply chain automation and
+                    fulfillment systems. In my role as Architect and Technical Lead of the XML Technology Group, my
+                    duties included the design and development of various XML schemas, XSLT templates, XML parsers, and
+                    an XML Schema datatype aware object model
+                </p>
+            </section>
+
+            <section id="symantec">
+                <header>
+                    <h3 class="dates">1990-1998</h3>
+                    <h2 class="company">Symantec</h2>
+                    <h3 class="position">Sr. Software Engineer</h3>
+                </header>
+                <p>
+                    Symantec produces utility software for personal computers. While employed there as Sr. Software
+                    Engineer, I designed and implemented a pilot of the virus definition upgrade infrastructure, an HTML
+                    user interface server which served as an embedded management console in various antivirus server
+                    products, SMTP proxy for Norton AntiVirus for Internet Email Gateways, supervised testing of Norton
+                    AntiVirus for Windows 95 and Norton AntiVirus for Windows NT, designed and implemented test tools
+                    for the Polymorphic AntiVirus Module used in all Norton AntiVirus 4.0 products.
+                </p>
+            </section>
+        </main>
+    </body>
+</html>
