@@ -272,5 +272,19 @@
                 </p>
             </section>
         </main>
+        <script>
+            if (location.hostname === 'waldin.net') {
+                const params = new URLSearchParams({
+                    nc: Date.now(),
+                    code: '840xigs5jBlPzxN77diWdugPDGjroC6y',
+                    url: location.href,
+                    t: document.title,
+                    ref: document.referrer,
+                    w: screen.width,
+                    h: screen.height,
+                });
+                fetch(`https://api.pirsch.io/hit?${params}`);
+            }
+        </script>
     </body>
 </html>
