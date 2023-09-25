@@ -1,26 +1,41 @@
 <style>
     body {
-        font-family: 120% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 200%;
+        padding: 20px;
+    }
+    h1 {
+        line-height: 1;
+        position: sticky;
+        top: 0;
+        background: white;
+    }
+    h2,
+    h3,
+    h4 {
+        margin-bottom: 0;
+    }
+    ul {
         line-height: 1.618;
-    }
-    li:has(input[type='checkbox']:checked) {
-        opacity: 0.5;
-    }
-    ul,
-    ol {
         margin-top: 0;
         padding-left: 0;
         list-style-type: none;
     }
-    h2,
-    h3 {
-        margin-bottom: 0;
+    li {
+        margin-bottom: 40px;
+    }
+    li:has(input[type='checkbox']:checked) {
+        opacity: 0.5;
     }
     img {
         margin-left: 4rem;
     }
+    input {
+        width: 35px;
+        height: 35px;
+    }
 </style>
-<h1>Travel checklist for Valeria</h1>
+<h1>San Francisco Travel Checklist for Valeria</h1>
 
 <h2>Monday, Sept 25th (the day before travel)</h2>
 <h3>Check-in</h3>
@@ -34,7 +49,7 @@
             Expect a text like this around 3pm to check-in:<br />
             <img
                 src="./checkin.png"
-                width="480"
+                width="720"
             />
         </label>
     </li>
@@ -47,7 +62,7 @@
             Click the link and check in, accepting all the default choices. You will get a follow up text like this:<br />
             <img
                 src="./checkedin.png"
-                width="480"
+                width="720"
             /><br />
         </label>
     </li>
@@ -123,7 +138,7 @@
             get to it, turn left and you will see a sign for gate A1. Walk towards it.<br />
             <video
                 height="640"
-                width="480"
+                width="720"
                 controls
                 src="./walktogate.mp4"
             ></video>
@@ -224,7 +239,7 @@
             Wi-Fi on your phone:<br />
             <img
                 src="./unitedwifi.png"
-                width="480"
+                width="720"
             />
         </label>
     </li>
@@ -256,7 +271,7 @@
                 src="./walktobaggageclaim.mp4"
                 controls
                 height="640"
-                width="480"
+                width="720"
             ></video>
         </label>
     </li>
@@ -270,14 +285,14 @@
             the escalator.<br />
             <img
                 src="escalator.png"
-                width="480"
+                width="720"
             />
         </label>
     </li>
 </ul>
 <script>
     // set video playback rate
-    document.querySelectorAll('video').forEach(e => (e.playbackRate = 2));
+    document.querySelectorAll('video').forEach(e => (e.playbackRate = 1.5));
     document.cookie.split(';').forEach(cookie => {
         cookie = cookie.trim();
         if (cookie.startsWith('checked=') && cookie.length > 8) {
