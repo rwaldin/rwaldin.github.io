@@ -1,0 +1,301 @@
+<style>
+    body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        line-height: 1.618;
+    }
+    li:has(input[type='checkbox']:checked) {
+        opacity: 0.5;
+    }
+    ul,
+    ol {
+        margin-top: 0;
+        padding-left: 0;
+        list-style-type: none;
+    }
+    h2,
+    h3 {
+        margin-bottom: 0;
+    }
+    img {
+        margin-left: 4rem;
+    }
+</style>
+<h1>Travel checklist for Valeria</h1>
+
+<h2>Monday, Sept 25th (the day before travel)</h2>
+<h3>Check-in</h3>
+<ul>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="checkintext"
+            />
+            Expect a text like this around 3pm to check-in:<br />
+            <img
+                src="./checkin.png"
+                width="480"
+            />
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="checkinlink"
+            />
+            Click the link and check in, accepting all the default choices. You will get a follow up text like this:<br />
+            <img
+                src="./checkedin.png"
+                width="480"
+            /><br />
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="checkinconfirm"
+            />
+            Once you're checked in, your boarding pass should be shown in the United App. Confirm it's there. Call me if
+            it's not and I'll help you.
+        </label>
+    </li>
+</ul>
+
+<h2>Tuesday, Sept 26th (the day of travel)</h2>
+
+<h3>Security</h3>
+<ul>
+    <li>
+        <label
+            ><input
+                type="checkbox"
+                name="arrive"
+            />
+            Arrive at the airport around 2pm and go directly to the security line
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="showid"
+            />
+            Show the boarding pass on your phone and your driver&apos;s license to the TSA person
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="security"
+            />
+            Take off shoes and jacket and put them in one of the big tubs. Remove everything from your pockets and put
+            them into the tub as well. Put luggage and tub onto conveyer belt.
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="security2"
+            />
+            Walk through the x-ray machine (turn, lift your arms, etc., as instructed by the TSA staff)
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="security3"
+            />
+            Collect your things from the conveyer belt and put everything back where it came from
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="walktogate"
+            />
+            Walk out of security, and you will see a tall blue wall with a bronze statue of a man and eagle. When you
+            get to it, turn left and you will see a sign for gate A1. Walk towards it.<br />
+            <video
+                height="640"
+                width="480"
+                controls
+                src="./walktogate.mp4"
+            ></video>
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="doublecheck"
+            />
+            Double check the gate signs to make sure it&apos;s United Airlines flight number 270 leaving for San
+            Francisco at 3:40pm: <br />
+            <img
+                width="640"
+                src="./gatesign.png"
+            />
+        </label>
+    </li>
+</ul>
+<h3>Boarding</h3>
+<ul>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="boardingwait"
+            />
+            When they announce boarding for "Group 1" or "First Class" passengers you can board. It will be just after
+            travelers with children, people who need extra help boarding, and active military service members, but
+            before everyone else.
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="boarding"
+            />
+            Board the plane. You're in seat 3F, which is the window seat to your left in the third row from the front.
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="overhead"
+            />
+            Put your carry-on luggage in the overhead bin. Don't be shy to ask for help from the flight attendants if
+            you need it.
+        </label>
+    </li>
+</ul>
+
+<h3>On The Plane</h3>
+<h4>Wi-Fi</h4>
+<ul>
+    <li>
+        <label> I already bought you a Wi-Fi pass for the flights. To connect your phone: </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="wifi1"
+            />
+            Wait at least 5 minutes after the plane has taken off, then use your phone to connect to the Wi-Fi network
+            called "unitedwifi.com"
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="wifi2"
+            />
+            Use your phone's browser to visit the website at
+            <a href="https://unitedwifi.com">https://www.unitedwifi.com</a>
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="wifi3"
+            />
+            You should see a purple sign-in button. Sign in using the frequent flyer number and password you set up on
+            your United Airlines app. Your Wi-Fi pass is connected to your frequent flyer account.
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="wifi4"
+            />
+            You should see a screen like this that shows you have a "Network" for the "Full Flight" and can now use
+            Wi-Fi on your phone:<br />
+            <img
+                src="./unitedwifi.png"
+                width="480"
+            />
+        </label>
+    </li>
+</ul>
+<h3>Landed</h3>
+<h4>Finding me</h4>
+<ul>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="land"
+            />
+            After you land, get your stuff and exit the airplane.
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="walktobaggageclaim"
+            />
+            Once you're off the plane, You need to walk to Baggage Claim to meet me. I don't know yet what gate you will
+            arrive at yet until the day of travel so I don't know which way you will go. Once I know the arrival gate, I
+            will update this to give you exact instructions. Most passengers will head that way. You can ask anybody for
+            help or call me. There may be several moving walkways and areas with shops along the way but there should be
+            signs for Baggage Claim everywhere. Here's how the walk looked for me:<br />
+            <video
+                src="./walktobaggageclaim.mp4"
+                controls
+                height="640"
+                width="480"
+            ></video>
+        </label>
+    </li>
+    <li>
+        <label>
+            <input
+                type="checkbox"
+                name="escalator"
+            />
+            You will reach an escalator that goes DOWN to Baggage Claim and I will meet you down there at the bottom of
+            the escalator.<br />
+            <img
+                src="escalator.png"
+                width="480"
+            />
+        </label>
+    </li>
+</ul>
+<script>
+    // set video playback rate
+    document.querySelectorAll('video').forEach(e => (e.playbackRate = 2));
+    document.cookie.split(';').forEach(cookie => {
+        cookie = cookie.trim();
+        if (cookie.startsWith('checked=') && cookie.length > 8) {
+            cookie
+                .substr(8)
+                .split(',')
+                .forEach(name => {
+                    document.querySelector(`input[name="${name}"]`).checked = true;
+                });
+        }
+    });
+    const updateCookie = _ => {
+        document.cookie = `checked=${[...document.querySelectorAll('input[type="checkbox"]:checked')]
+            .map(checkbox => checkbox.name)
+            .join(',')}`;
+    };
+    // add change handlers to all checkboxes
+    document
+        .querySelectorAll('input[type="checkbox"]')
+        .forEach(checkbox => checkbox.addEventListener('change', updateCookie));
+</script>
