@@ -34,7 +34,7 @@
     --main-width: calc(100vw - 2 * var(--aside-width));
     --base-font-size: 15px;
     font-size: var(--base-font-size);
-    /* animation: milliseconds 1000000ms linear infinite; */
+    animation: milliseconds 1000000ms linear infinite;
 }
 
 @media (max-width: 1024px) {
