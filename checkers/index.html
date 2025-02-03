@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>AI v AI - Checkers</title>
+        <script type="module" src="checkerboard.js"></script>
+        <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+        <link rel="stylesheet" href="chatsworth.css" />
+    </head>
+    <body>
+        <aside id="leftSidebar">
+            <chat-settings side="black" id="blackPlayer"></chat-settings>
+            <chat-output side="black" id="blackThoughts" settings="#blackPlayer"></chat-output>
+        </aside>
+        <header>hello</header>
+        <main>
+            <checker-board
+                redSettings="#redPlayer"
+                blackSettings="#blackPlayer"
+                redThoughts="#redThoughts"
+                blackThoughts="#blackThoughts"
+            ></checker-board>
+        </main>
+        <footer></footer>
+        <aside id="rightSidebar">
+            <chat-settings side="red" id="redPlayer"></chat-settings>
+            <chat-output side="red" id="redThoughts" settings="#redPlayer"></chat-output>
+        </aside>
+        <modal-dialog w id="modal-dialog"><div slot="actions"></div></modal-dialog>
+        <notification-dialog></notification-dialog>
+    </body>
+</html>
