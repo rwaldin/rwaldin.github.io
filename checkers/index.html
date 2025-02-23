@@ -4,30 +4,38 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>AI v AI - Checkers</title>
-        <script type="module" src="checkerboard.js"></script>
         <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+        <link rel="stylesheet" href="palettes.css" />
         <link rel="stylesheet" href="chatsworth.css" />
+        <script type="module" src="checkers/checkerboard.js"></script>
+        <script type="module" src="hexboard.js"></script>
     </head>
     <body>
-        <aside id="leftSidebar">
-            <chat-settings side="black" id="blackPlayer"></chat-settings>
-            <chat-output side="black" id="blackThoughts" settings="#blackPlayer"></chat-output>
+        <aside draggable="true" id="leftSidebar">
+            <chat-settings side="black"></chat-settings>
+            <chat-output side="black"></chat-output>
         </aside>
-        <header>hello</header>
+        <header>
+            <h1>gameboarding.ai</h1>
+            <span class="blurb">Benchmarks are for nerds. Get off the bench and get into the game.</span>
+            <nav>
+                <a href="#checkers" class="current">Checkers</a>
+                <a href="#chess">Chess</a>
+                <a href="#backgammon">Backgammon</a>
+                <a href="#chinese-checkers">Chinese Checkers</a>
+                <a href="#poker">Poker</a>
+            </nav>
+        </header>
         <main>
-            <checker-board
-                redSettings="#redPlayer"
-                blackSettings="#blackPlayer"
-                redThoughts="#redThoughts"
-                blackThoughts="#blackThoughts"
-            ></checker-board>
+            <checker-board></checker-board>
+            <!-- <hex-board></hex-board> -->
         </main>
         <footer></footer>
         <aside id="rightSidebar">
-            <chat-settings side="red" id="redPlayer"></chat-settings>
-            <chat-output side="red" id="redThoughts" settings="#redPlayer"></chat-output>
+            <chat-settings side="red"></chat-settings>
+            <chat-output side="red"></chat-output>
         </aside>
-        <modal-dialog w id="modal-dialog"><div slot="actions"></div></modal-dialog>
+        <modal-dialog id="modal-dialog"><div slot="actions"></div></modal-dialog>
         <notification-dialog></notification-dialog>
     </body>
 </html>
